@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>የሰርግ ግብዣ | Wedding Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&family=Noto+Serif+Ethiopic:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cinematic Intro Section -->
+    <section id="cinematic-intro" class="cinematic-intro">
+        <div class="slideshow-container">
+            <div class="slide active">
+                <img src="assets/images/Habesha kaba.jpg" alt="Bride and Groom">
+            </div>
+            <div class="slide">
+                <img src="assets/images/Habesha kaba (1).jpg" alt="Couple Portrait">
+            </div>
+            <div class="slide">
+                <img src="assets/images/Habesha kaba.jpg" alt="Wedding Moments">
+            </div>
+        </div>
+        
+        <div class="intro-content">
+            <h1 class="couple-names">
+                <span class="groom-name">እድላዊት</span>
+                <span class="ampersand">&</span>
+                <span class="bride-name">ቃለአብ</span>
+            </h1>
+            <p class="intro-date">ግንቦብ 24, 2018</p>
+            <button id="enter-btn" class="enter-btn">Enter Invitation</button>
+        </div>
+        
+        <div class="audio-controls">
+            <button id="mute-btn" class="mute-btn">🔊</button>
+            <audio id="bg-music" loop autoplay>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            </audio>
+            <iframe id="youtube-player" style="display:none;" allow="autoplay" src="https://www.youtube.com/embed/6pxWB0HW3aY?enablejsapi=1&autoplay=1&mute=1&loop=1&playlist=6pxWB0HW3aY"></iframe>
+        </div>
+    </section>
+
+    <!-- Main Invitation Section -->
+    <section id="main-invitation" class="main-invitation hidden">
+        <!-- Theme Toggle -->
+        <div class="theme-toggle">
+            <label class="switch">
+                <input type="checkbox" id="theme-switch">
+                <span class="slider round">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </span>
+            </label>
+        </div>
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header-image">
+                <img src="assets/images/Habesha kaba (1).jpg" alt="Wedding Header">
+            </div>
+            <div class="header-content">
+                <h1 class="main-title">የሰርግ ግብዣ</h1>
+                <div class="bible-verses">
+                    <p class="verse">ዘፍጥረት 2:24</p>
+                    <p class="verse-text">"ሰው አባቱንና እናቱን ይተው ከሚስቱም ጋር ይጣበቃል፤ ሁለቱም አንድ ሥጋ ይሆናሉ።"</p>
+                    <p class="verse">1 ቆሮንቶስ 13:4-7</p>
+                    <p class="verse-text">"ፍቅር ይታገሣል፥ ይርሳል… ሁሉን ይሸከማል፥ ሁሉን ያምናል፥ ሁሉን ይተስፋል፥ ሁሉን ይታገሣል።"</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Invitation Letter -->
+        <section class="invitation-letter">
+            <div class="letter-content">
+                <h2>የግብዣ መልዕክት</h2>
+                <p class="invitation-text">
+                    በእግዚአብሔር ፍቅር እና በቤተሰቦቻችን ቡራኬ፣ በዚህ ደስታ ቀን ከእኛ ጋር እንድትካፈሉ በክብር እንጋብዛችኋለን።
+                    የሰርግ ሥነ ሥርዐታችንን በተሳሳብ እንዲያዩንና የፍቅራችንን አዲስ ጉዞ በእርስዎ ተሳትፎ እንዲሞላ እንፈልጋለን።
+                </p>
+            </div>
+        </section>
+
+        <!-- Wedding Details -->
+        <section class="wedding-details">
+            <h2>የሰርግ መረጃዎች</h2>
+            <div class="details-grid">
+                <div class="detail-card">
+                    <div class="card-icon">📆</div>
+                    <h3>ቀን</h3>
+                    <p>ግንቦት 24, 2018</p>
+                </div>
+                <div class="detail-card">
+                    <div class="card-icon">⏰</div>
+                    <h3>ሰዓት</h3>
+                    <p>8:00 ጥዋት</p>
+                </div>
+                <div class="detail-card">
+                    <div class="card-icon">📍</div>
+                    <h3>ቦታ</h3>
+                    <p>Atlas Hotel</p>
+                </div>
+            </div>
+
+            <!-- Calendar Component -->
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <h3>ግንቦት 2018</h3>
+                </div>
+                <div class="calendar-grid">
+                    <div class="calendar-weekdays">
+                        <div>እሁድ</div>
+                        <div>ሰኞ</div>
+                        <div>ማክሰ</div>
+                        <div>ረቡዕ</div>
+                        <div>ሐሙስ</div>
+                        <div>ዓርብ</div>
+                        <div>ቅዳሜ</div>
+                    </div>
+                    <div class="calendar-days">
+                        <!-- Calendar days will be generated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schedule Timeline -->
+            <div class="schedule-timeline">
+                <h3>የተያዙ መርኃግብር</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="time">8:00</div>
+                        <div class="event">የሙሽሮች ግባት</div>
+                        <div class="description">ሙሽሮች ወደ አዳራሽ ይገባሉ ሙሽሮች ሲመጡ ዝማሬ ይኖራል</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">8:30</div>
+                        <div class="event">ቃለ ወንጌል</div>
+                        <div class="description">አባቶች በጽሎት ይክፍታሉ ቃለ ወንጌልን ያስተምራሉ</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">9:00</div>
+                        <div class="event">ማዕድ</div>
+                        <div class="description">ሙሽሮች እንዲሁም እንግዶች ምሳ ያነሳሉ ዝማሬ ይኖራል</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">10:00</div>
+                        <div class="event">ወረብ</div>
+                        <div class="description">በሚዜዎች ፣ አጃቢዎች እንዲሁም ዘማርያን ዕለቱን የሚያወሳ ወረብ</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">10:40</div>
+                        <div class="event">ኬክ ቆረሳ</div>
+                        <div class="description">ሙሽሮች ኬክ ይቆርሳሉ</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">11:00</div>
+                        <div class="event">የመዝጊያ መዝሙር</div>
+                        <div class="description">ታዳሚው ከሙሽሮች ጋር ይዘምራሉ</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">11:30</div>
+                        <div class="event">የሰርግ ፎቶግራፍ</div>
+                        <div class="description">ከሙሽሮች ጋር የፎቶ ፕሮግራም ይኖራል</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">12:00</div>
+                        <div class="event">ሙሽሮች ከአዳራሽ የወጣሉ</div>
+                        <div class="description">ሙሽሮች በቤተሰባቸው ፣ ጓደቻቸው ታጅበው ይወጣሉ</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="location-section">
+            <h2>የሰርግ ቦታ</h2>
+            <div class="location-content">
+                <div class="map-container">
+                    <div id="map" class="map-placeholder">
+                        <div class="map-info">
+                            <h3>Atlas Hotel</h3>
+                            <p>📍 Addis Ababa, Ethiopia</p>
+                            <p>Click below for directions</p>
+                        </div>
+                    </div>
+                    <button id="directions-btn" class="directions-btn">📍 አቅጣጫ ይመልከቱ</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guest Wishes Section -->
+        <section class="guest-wishes">
+            <h2>የእንግዶች የደስታ መግለጫ</h2>
+            <div class="wishes-container">
+                <div class="wish-form">
+                    <input type="text" id="guest-name" placeholder="ስም" class="form-input">
+                    <textarea id="guest-message" placeholder="መልእክት" class="form-textarea"></textarea>
+                    <button id="submit-wish" class="submit-btn">ላክ</button>
+                </div>
+                <div id="wishes-display" class="wishes-display">
+                    <!-- Wishes will be displayed here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery Section -->
+        <section class="photo-gallery">
+            <h2>የእንግዶች ፎቶዎች</h2>
+            <div class="gallery-container">
+                <div class="upload-area">
+                    <input type="file" id="photo-upload" accept="image/*" multiple style="display: none;">
+                    <label for="photo-upload" class="upload-label">
+                        <span class="upload-icon">📸</span>
+                        <span>ፎቶዎችን ይጫኑ ወይም ወደዚህ ይጎትቱ</span>
+                    </label>
+                </div>
+                <div id="photo-grid" class="photo-grid">
+                    <!-- Uploaded photos will be displayed here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2028 እድላዊት & ቃለአብ | በፍቅር የተዋቀረ</p>
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
